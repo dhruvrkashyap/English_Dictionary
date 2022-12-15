@@ -103,6 +103,7 @@ int autofill( trie *root, string word, vector <string>&prefixs )
 			}
 			root = root->word[ position ];
 		}
+		
 		autofill_reccursion(root, word, prefixs);
 		return 1;
 	}
